@@ -1,0 +1,3 @@
+Python: 8(Lec) 50(Fac) 16(Lab)
+Network: 20(Lec) 270(Fac) -
+OS: 16(Lec) - 32(Lab)
