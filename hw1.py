@@ -4,12 +4,13 @@
 Для выполнения расчета для конкретных значений необходимо запускать скрипт с параметрами.
 """
 
+
 from sys import argv
 
 
-scriptName, productivity, ratePerHour, bonus = argv
-print(f"Script name:{scriptName}\
-    \nHours:{productivity}\
-    \nRate per hour:{ratePerHour}\
-    \nBonus:{bonus}\
-    \nSalary:{int(productivity)*int(ratePerHour)+int(bonus)}")
+script_name, productivity, rate_per_hour, bonus = argv
+print("Name of script: ", script_name)
+print('Productivity, hours: ', productivity)
+print('Rate per hour: ', rate_per_hour)
+print('Bonus: ', bonus)
+print('Salary: ', int(productivity) * int(rate_per_hour) + int(bonus))
