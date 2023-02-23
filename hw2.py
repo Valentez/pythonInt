@@ -8,13 +8,13 @@
 """
 
 
-def maxim():
-    mylist = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
-    print(mylist)
+def max():
+    my_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+    print(my_list)
 
-    resultlist = [mylist[i] for i in range(1, len(mylist)) if mylist[i] > mylist[i-1]]
-    print(f"Result:\n {resultlist}")
+    result_list = [my_list[i] for i in range(1, len(my_list)) if my_list[i] > my_list[i-1]]
+    print(f"Result:\n {result_list}")
 
 
 if __name__ == "__main__":
-    maxim()
+    max()
