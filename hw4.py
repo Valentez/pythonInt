@@ -12,5 +12,5 @@ from random import randint
 source = [randint(0, 10) for i in range(20)]
 print(f"List in begin: {source}")
 
-notRepeat = [l for l in source if source.count(l) == 1]
-print(f"Note repeat:   {notRepeat}")
+result = [l for l in source if source.count(l) == 1]
+print(f"Not repeat:   {result}")
