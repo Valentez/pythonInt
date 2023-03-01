@@ -17,22 +17,22 @@
 
 import json
 
-exportList = []
-dictPlus = {}
-dictMinus = {}
+export_list = []
+dict_plus = {}
+dict_minus = {}
 with open("hw57.txt") as file:
-    profitList = []
+    profit_list = []
     for l in file.readlines():
         name, _, revenue, costs = l.rstrip().split()
         profit = int(revenue) - int(costs)
         if profit > 0:
-            profitList.append(profit)
-            dictPlus.update({name: profit})
+            profit_list.append(profit)
+            dict_plus.update({name: profit})
         else:
-            dictMinus.update({name: profit})
-    exportList.append(dictPlus)
-    exportList.append(dictMinus)
-    exportList.append({"avarageProfit": sum(profitList)/len(profitList)})
+            dict_minus.update({name: profit})
+    export_list.append(dictPlus)
+    export_list.append(dictMinus)
+    export_list.append({"avarage_profit": sum(profit_list)/len(profit_list)})
 
 with open("hw57.json", "w") as file:
-    json.dump(exportList, file)
+    json.dump(export_list, file)
