@@ -11,8 +11,8 @@
 """
 from itertools import count, cycle
 
-interCount = 0
-countList = []
+inter_count = 0
+count_list = []
 
 
 def generate(start):
@@ -27,9 +27,9 @@ for i in generate(3):
 print(countList)
 
 for i in cycle(countList):
-    if i == countList[0]:
-        interCount += 1
-    if interCount < 3:
+    if i == count_list[0]:
+        inter_count += 1
+    if inter_count < 3:
         print(i)
     else:
         break
