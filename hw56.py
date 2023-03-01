@@ -14,10 +14,10 @@
 
 {“Информатика”: 170, “Физика”: 40, “Физкультура”: 30}
 """
-exportDict = {}
+export_dict = {}
 with open("hw56.txt") as file:
     for l in file:
-        classType, *lessons = l.split()
-        lessonCount = [int(lesson.rstrip('(Lec)(Fac)(Lab)')) for lesson in lessons if lesson != '-']
-        exportDict.update({classType.rstrip(":"): sum(lessonCount)})
-print(exportDict)
+        lesson_type, *lessons = l.split()
+        lesson_count = [int(lesson.rstrip('(Lec)(Fac)(Lab)')) for lesson in lessons if lesson != '-']
+        export_dict.update({lesson_type.rstrip(":"): sum(lesson_count)})
+print(export_dict)
