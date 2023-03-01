@@ -1,0 +1,7 @@
+Odin - 1
+Dva - 2
+Tri - 3
+Chetyre - 4
+Pyat - 5
+Shest - 6
+Sem - 7
