@@ -3,12 +3,12 @@
 вводимые пользователем. Об окончании ввода данных свидетельствует пустая строка.
 """
 
-inputString = input("Please, input yours string: ")
+input_str = input("Please, input yours string: ")
 with open("hw51.txt", "a") as file:
-    while inputString:
-        file.write(f"{inputString}\n")
-        inputString = input("Please, input yours string(for exit, input 'q'): ")
-        if inputString == "q":
+    while input_str:
+        file.write(f"{input_str}\n")
+        input_str = input("Please, input yours string(for exit, input 'q'): ")
+        if input_str == "q":
             file.close()
             break
 file = open("hw51.txt", "r")
