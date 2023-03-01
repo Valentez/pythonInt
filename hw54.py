@@ -8,14 +8,14 @@ Four — 4
 При этом английские числительные должны заменяться на русские.
 Новый блок строк должен записываться в новый текстовый файл.
 """
-GoogleTranslate = {"One": "Odin",
+translate_dict = {"One": "Odin",
                    "Two": "Dva",
                    "Three": "Tri",
                    "Four": "Chetyre",
                    "Five": "Pyat",
                    "Six": "Shest",
                    "Seven": "Sem"}
-with open("hw54Source.txt") as fileRead, open("hw54Result.txt", "w") as fileWrite:
-    for line in fileRead.readlines():
-        txtNum, num = line.rstrip().split(' - ')
-        fileWrite.write(f"{GoogleTranslate[txtNum]} - {num}\n")
+with open("hw54Source.txt") as file_read, open("hw54Result.txt", "w") as file_write:
+    for line in file_read.readlines():
+        txt_num, num = line.rstrip().split(' - ')
+        file_write.write(f"{translate_dict[txt_num]} - {num}\n")
